@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAção | Soluções Ambientais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <nav aria-label="Navegação Principal">
+            <div class="logo">EcoAção</div>
+            <div class="accessibility-toolbar">
+                <button onclick="updateFontSize(1)" aria-label="Aumentar fonte">A+</button>
+                <button onclick="updateFontSize(-1)" aria-label="Diminuir fonte">A-</button>
+                <button id="contrast-toggle" aria-label="Alternar alto contraste">🌓</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero scroll-reveal">
+            <div class="hero-content">
+                <h1>Lutando por um amanhã sem poluição</h1>
+                <p>Métodos inovadores e ações práticas para restaurar o planeta.</p>
+            </div>
+        </section>
+
+        <section id="solutions" class="scroll-reveal" aria-labelledby="sol-title">
+            <h2 id="sol-title">Métodos de Combate</h2>
+            <div class="grid-container" id="solutions-grid"></div>
+        </section>
+
+        <section class="carousel-container scroll-reveal" aria-label="Galeria de Impacto">
+            <div class="carousel" id="carousel">
+                <div class="carousel-track" id="carousel-track"></div>
+                <button class="carousel-btn prev" aria-label="Anterior">❮</button>
+                <button class="carousel-btn next" aria-label="Próximo">❯</button>
+            </div>
+        </section>
+
+        <section class="faq scroll-reveal">
+            <h2>Dúvidas Frequentes</h2>
+            <div id="faq-container"></div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2026 EcoAção - Sustentabilidade e Acessibilidade Digital.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
